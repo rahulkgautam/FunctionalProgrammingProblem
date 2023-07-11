@@ -8,10 +8,12 @@ namespace FunctionalProgrammingProblems
         {
             try
             {
-                Console.WriteLine("Enter a number and find prime factors:");
-                int number = Convert.ToInt32(Console.ReadLine());
-                var primeFactor=new PrimeFactorization();
-                primeFactor.FindPrimeFactor(number);
+                Console.WriteLine("Enter the dividend:");
+                int dividend = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter the divisor:");
+                int divisor = Convert.ToInt32(Console.ReadLine());
+                var quotientAndRemainder = new QuotientAndRemainder();
+                quotientAndRemainder.CalculateQuotientAndRemainder(dividend,divisor);
             }
             catch (Exception ex)
             {
