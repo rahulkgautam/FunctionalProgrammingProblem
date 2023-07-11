@@ -7,6 +7,7 @@ namespace FunctionalProgrammingProblems
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Functional Programming Problems");
+            FlipCoin.FlipCoinAndCalculatePercentage();
         }
     }
 }
