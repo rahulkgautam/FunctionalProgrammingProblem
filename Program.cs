@@ -8,17 +8,18 @@ namespace FunctionalProgrammingProblems
         {
             try
             {
-                Console.WriteLine("Enter the value of N:");
-                int n = Convert.ToInt32(Console.ReadLine());
-                var harmonic =new HarmonicNumber();
-                harmonic.PrintHarmonicNumber(n);
+                Console.WriteLine("Enter a number and find prime factors:");
+                int number = Convert.ToInt32(Console.ReadLine());
+                var primeFactor=new PrimeFactorization();
+                primeFactor.FindPrimeFactor(number);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                Console.WriteLine("Please Enter only Number");
+                Console.WriteLine("Please Enter Only Number");
             }
 
-           
+            
+
         }
     }
 }
