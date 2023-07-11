@@ -8,12 +8,12 @@ namespace FunctionalProgrammingProblems
         {
             try
             {
-                Console.WriteLine("Enter the dividend:");
-                int dividend = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter the divisor:");
-                int divisor = Convert.ToInt32(Console.ReadLine());
-                var quotientAndRemainder = new QuotientAndRemainder();
-                quotientAndRemainder.CalculateQuotientAndRemainder(dividend,divisor);
+                Console.WriteLine("Enter the First Number:");
+                int firstNumber = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter the Second Number:");
+                int secondNumber = Convert.ToInt32(Console.ReadLine());
+                var swipTwoNumber = new SwapTwoNumber();
+                swipTwoNumber.SwapNumber(firstNumber,secondNumber);
             }
             catch (Exception ex)
             {
