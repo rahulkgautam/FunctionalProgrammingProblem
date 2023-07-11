@@ -8,22 +8,17 @@ namespace FunctionalProgrammingProblems
         {
             try
             {
-                Console.WriteLine("Welcome to Functional Programming Problems");
-                var leapYear = new LeapYear();
-                Console.WriteLine("Enter a year (4-digit):");
-                int year = Convert.ToInt32(Console.ReadLine());
-                bool isLeapYear = leapYear.FindLeapYear(year);
-
-                if (isLeapYear)
-                    Console.WriteLine(year + " is a leap year.");
-                else
-                    Console.WriteLine(year + " is not a leap year.");
+                Console.WriteLine("Enter the value of N:");
+                int n = Convert.ToInt32(Console.ReadLine());
+                var harmonic =new HarmonicNumber();
+                harmonic.PrintHarmonicNumber(n);
             }
             catch(Exception ex)
             {
-                Console.WriteLine("Please Enter only Number (4-Digit) Year");
+                Console.WriteLine("Please Enter only Number");
             }
 
+           
         }
     }
 }
