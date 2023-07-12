@@ -8,15 +8,15 @@ namespace FunctionalProgrammingProblems
         {
             try
             {
-                Console.WriteLine("=========Even odd number Problem===========");
-                var evenOdd = new EvenOdd();
-                Console.WriteLine("Enter a Number");
-                int number = Convert.ToInt32(Console.ReadLine());
-                evenOdd.CheckEvenOddNumber(number);
+                Console.WriteLine("=========Vowel Consonant Problem===========");
+                var evenOdd = new VowelConsonant();
+                Console.WriteLine("Enter a Alphabet (a-z or A-Z)");
+                char ch = Convert.ToChar(Console.ReadLine().ToLower());
+                evenOdd.CheckVowelConsonant(ch);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Please Enter only Number");
+                Console.WriteLine("Please Enter only Alphabet");
             }
             
         }
