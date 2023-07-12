@@ -6,22 +6,18 @@ namespace FunctionalProgrammingProblems
     {
         static void Main(string[] args)
         {
-            try
-            {
-                Console.WriteLine("Enter the First Number:");
-                int firstNumber = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter the Second Number:");
-                int secondNumber = Convert.ToInt32(Console.ReadLine());
-                var swipTwoNumber = new SwapTwoNumber();
-                swipTwoNumber.SwapNumber(firstNumber,secondNumber);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Please Enter Only Number");
-            }
+            // read in one command-line argument
+            int n = Convert.ToInt32(args[0]);
+            int i = 0;                // count from 0 to N
+            int powerOfTwo = 1;       // the ith power of two
 
-            
-
+            // repeat until i equals n
+            while (i <= n)
+            {
+               Console.WriteLine(i + " " + powerOfTwo);   // print out the power of two
+                powerOfTwo = 2 * powerOfTwo;                // double to get the next one
+                i = i + 1;
+            }
         }
     }
 }
